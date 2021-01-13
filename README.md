@@ -7,7 +7,7 @@
 ## Explain
  - 쇼핑리스트
  <p align="center">
-   <img src="https://user-images.githubusercontent.com/45222982/102621683-43dcd800-4183-11eb-8498-1b890748e938.png" width="800" height="400"/>
+   <img src="https://user-images.githubusercontent.com/45222982/104422992-d32dad80-55c0-11eb-8cc7-40a99db1f2f0.png" width="800" height="600"/>
 </p>
 
 ### Source
