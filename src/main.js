@@ -1,8 +1,54 @@
-const loadItems = () => {
-    return fetch("data/data.json")
-        .then((response) => response.json())
-        .then((json) => json.items);
-};
+const items = [
+    {
+        type: "tshirt",
+        gender: "male",
+        size: "large",
+        color: "blue",
+        image: "img/blue_t.png",
+    },
+    {
+        type: "pants",
+        gender: "male",
+        size: "large",
+        color: "yellow",
+        image: "img/yellow_p.png",
+    },
+    {
+        type: "skirt",
+        gender: "male",
+        size: "large",
+        color: "pink",
+        image: "img/pink_s.png",
+    },
+    {
+        type: "pants",
+        gender: "male",
+        size: "large",
+        color: "pink",
+        image: "img/pink_p.png",
+    },
+    {
+        type: "tshirt",
+        gender: "male",
+        size: "large",
+        color: "blue",
+        image: "img/blue_t.png",
+    },
+    {
+        type: "pants",
+        gender: "male",
+        size: "large",
+        color: "blue",
+        image: "img/blue_p.png",
+    },
+    {
+        type: "tshirt",
+        gender: "male",
+        size: "large",
+        color: "blue",
+        image: "img/blue_t.png",
+    },
+];
 
 const displayItems = (items) => {
     const container = document.querySelector(".items");
@@ -34,7 +80,5 @@ const setEventListner = (items) => {
     buttons.addEventListener("click", (e) => onButtonClick(e, items));
 };
 
-loadItems().then((items) => {
-    displayItems(items);
-    setEventListner(items);
-});
+displayItems(items);
+setEventListner(items);
