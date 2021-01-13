@@ -14,12 +14,6 @@
 
 - 종류별로 filter
 ```js
-const loadItems = () => {
-    return fetch("data/data.json")
-        .then((response) => response.json())
-        .then((json) => json.items);
-};
-
 const displayItems = (items) => {
     const container = document.querySelector(".items");
     container.innerHTML = items.map((item) => createHTMLString(item)).join("");
@@ -50,8 +44,7 @@ const setEventListner = (items) => {
     buttons.addEventListener("click", (e) => onButtonClick(e, items));
 };
 
-loadItems().then((items) => {
-    displayItems(items);
-    setEventListner(items);
-});
+displayItems(items);
+setEventListner(items);
+
 ```
